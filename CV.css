@@ -1,0 +1,285 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Quicksand:wght@300;500&family=Roboto&display=swap');
+*{  
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.8;
+    background-color: #1a2321c9;
+}
+#menuler{  
+    display: flex;
+    justify-content: space-between;
+}
+.solmenu img{
+    width: 50px;
+    margin-right: 5%; 
+}
+.solmenu{
+    margin-left: 2%;
+    display: flex;
+    align-items: center; 
+}
+.solmenu h1{
+    color: #F7ECDE;
+    display: flex;  
+}
+.sagmenu{
+    margin-right: 2%;
+    display: flex;
+}
+.sagmenu a{
+    font-size: larger;
+    color: #F7ECDE;
+    text-decoration: none;
+}
+.sagmenu li:hover{
+    font-size: 22px;
+    transition: .3s;
+    padding-bottom: 0;
+    border-bottom: 5px solid #e63605;
+}
+.sagmenu li{  
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+#bg{
+    position: relative;
+    height: 60vh;
+    z-index: -1;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("images/bg1.jpg");
+}
+#bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.solmenu img{
+    margin-left: 50px; 
+}
+#bg .content{
+    padding: 9%; 
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-areas: "  o p  ";
+    justify-items:stretch;
+    text-align: center;
+     }
+ .contentsol{
+    background-color: #99c75c7b;
+    font-size:4rem;}
+ .contentsol i{
+    color: #c61212;
+ }
+ .contentsol img{
+    clip-path: circle(50% at 50% 50%);
+ }
+ .content h4{
+    color: #0000b2;
+ }
+.content p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;   
+}
+.content h1{
+    font-size: 3.5rem;
+    color: #680707;
+}
+.sagmenu a,.solmenu h1{
+    font-size: 2.5rem;
+}
+.yetenekler h4{
+    font-size: 2rem;
+}
+.yetenekler p{
+    font-size: 1.5rem;
+}
+.orta {
+    background-color: #eafbd4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "x y z"
+                        " a b c"
+                        " d e f ";
+
+    justify-items: center;
+    text-align: center;   
+}
+.orta h4,.orta p ,.orta i{
+    margin-bottom: 5%;
+    color: #e6b03b;
+}
+.orta p{
+    color: #697c8b;
+}
+.orta i{
+    width:fit-content;
+    background-color: #C3F8FF;
+    border-radius: 50px;
+    font-size: 500%;
+    color: #1463a3;
+    padding: 1rem;
+}
+#aboutsağ p{
+    max-width: 80%;
+}
+.eğitim{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;  
+}
+.eğitim .bilgiler{
+    flex: 1;
+}
+#aboutsol img{
+    background-color: #697c8b;
+    width: 461%;    
+}
+#aboutsağ{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    background-color: #697c8b;
+    flex-grow: 1;
+}
+#aboutsağ h1,#aboutsağ p{
+    color: #f3e9c9;    
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+#aboutsağ h1{
+    font-size: 3rem;
+}
+#aboutsağ p{
+ font-size: 1.8rem;
+}
+.footer{
+    color: #de4715;
+    padding: 3%;
+    text-align: center;
+    font-size: xx-large;
+    background-color:#C8DBBE;
+}
+.fa-brands{
+    margin: 1%;
+    color: #FF8FB1;     
+}
+.footer p{
+    font-size: 2.5rem;
+    color: black;
+}
+.yukarı{
+    transition: color 1.5s;
+    font-size:5rem;
+    background-color: white;
+    color: red;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+.yukarı:hover{
+    color: yellow;
+    transition: color .6s;
+ }
+ @media (max-width:768px){
+    html{
+        font-size: 8px;
+    }
+    #menuler{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .orta{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .eğitim .bilgiler{
+        flex: 100%;
+    }
+    #aboutsağ p{
+        max-width: 90%;
+    }
+    #aboutsol h1{
+        display: flex;
+        align-items:center;
+        text-align: center;
+        justify-content:center ;
+    }
+    .resimler div{
+        flex: 40%;
+ }
+ .bilgiler img{
+    height:100%;
+    text-align: center;
+    padding: 10%;
+    background-color: #697c8b;
+}
+.bilgiler h1{
+        text-align: center;
+    }
+   #aboutsağ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+    .sagmenu li{
+        padding: 5%;
+    }
+ }
+.bilgiler{
+    display: grid;
+    grid-template-columns:  5fr 1fr 2fr 10fr 5fr ;
+    grid-template-areas: "  . a b c . "
+                            " . d e f ."
+                        " . g h j .";
+}
+.footer h4{
+    color:#1463a3;
+}
+.bilgiler i{
+    color: #9F8772;
+}
+.footer h3{
+    color: #665A48;
+    margin-bottom: 3%;
+}
+.bilgiler P{
+    color: #06283D;
+}
+.linkler i{
+    margin-top: 3%;
+    color: #F96666;
+    font-size: larger;
+}
+#aboutsağ h1{
+    color: #B7C4CF;
+}
+

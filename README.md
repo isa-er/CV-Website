@@ -1,1 +1,1 @@
-# isa-er--ozgecmis-CV--web-sayfasi-
+# CV_website
